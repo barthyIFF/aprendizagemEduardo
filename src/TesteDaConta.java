@@ -3,7 +3,9 @@ public class TesteDaConta {
 
 	public static void main(String[] args) {
 		
+		//
 		Conta ContaDoEduardo = new Conta();
+		Conta ContaDoClaudinho = new Conta();
 		
 		Data data = new Data();
 		
@@ -11,10 +13,11 @@ public class TesteDaConta {
 		data.mes = 04;
 		data.ano = 2023;
 		
-		ContaDoEduardo.dataDeAbertura = data;
+		//ContaDoEduardo.dataDeAbertura = data;
+		ContaDoClaudinho.setNomeDoTitular("Claudio");
 		
-		
-		ContaDoEduardo.mostrarDadosDaConta();
+		System.out.println("Nome do titular: " + ContaDoClaudinho.getNomeDoTitular());
+		//ContaDoEduardo.mostrarDadosDaConta();
 		
 		//ContaDoEduardo.depositar(1000);
 		//ContaDoEduardo.saca(250);
