@@ -3,7 +3,7 @@ public class TesteDaConta {
 
 	public static void main(String[] args) {
 		
-		//teste de commit
+		//
 		
 		Conta ContaDoEduardo = new Conta();
 		Conta ContaDoClaudinho = new Conta();
@@ -16,8 +16,18 @@ public class TesteDaConta {
 		
 		//ContaDoEduardo.dataDeAbertura = data;
 		ContaDoClaudinho.setNomeDoTitular("Claudio");
+		ContaDoEduardo.setNomeDoTitular("Eduardo");
+		
+		ContaDoClaudinho.setAgencia("0001 99999");
+		ContaDoEduardo.setAgencia("0002 88888");
 		
 		System.out.println("Nome do titular: " + ContaDoClaudinho.getNomeDoTitular());
+		System.out.println("Nome do titular: " + ContaDoEduardo.getNomeDoTitular());
+		
+		
+		System.out.println("Numero da agencia do " + ContaDoClaudinho.getNomeDoTitular() + ":" + ContaDoClaudinho.getAgencia());
+		System.out.println("Numero da agencia do " + ContaDoEduardo.getNomeDoTitular() + ":" + ContaDoEduardo.getAgencia());
+		
 		//ContaDoEduardo.mostrarDadosDaConta();
 		
 		//ContaDoEduardo.depositar(1000);
