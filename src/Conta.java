@@ -22,6 +22,14 @@ public class Conta {
 		this.nomeDoTitular = nomeDoTitular;
 	}
 
+	public String getAgencia() {
+		return agencia;
+	}
+	
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+	
 	void saca(double valorQueSeraSacado) {
 		saldo += -valorQueSeraSacado;
 	}
@@ -42,4 +50,5 @@ public class Conta {
 		System.out.println("Saldo da conta: " + saldo);
 		//System.out.println("Data de abertura: " + dataDeAbertura.dia + "/" + dataDeAbertura.mes + "/" + dataDeAbertura.ano );
 	}
+
 }
