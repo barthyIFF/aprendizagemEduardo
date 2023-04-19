@@ -18,7 +18,8 @@ public class TesteDaConta {
 		ContaDoClaudinho.setNomeDoTitular("Claudio");
 		ContaDoEduardo.setNomeDoTitular("Eduardo");
 		
-		ContaDoClaudinho.setAgencia("0001 99999");
+		//Claudio - 19/04/23 - Mudando so o valor do atributo agencia
+		ContaDoClaudinho.setAgencia("0000 00000");
 		ContaDoEduardo.setAgencia("0002 88888");
 		
 		System.out.println("Nome do titular: " + ContaDoClaudinho.getNomeDoTitular());
