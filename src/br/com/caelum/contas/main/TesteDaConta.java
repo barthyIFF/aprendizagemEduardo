@@ -2,6 +2,8 @@ package br.com.caelum.contas.main;
 import br.com.caelum.contas.modelo.Conta;
 import br.com.caelum.contas.modelo.Data;
 
+//Eduardo - 25/04/23 - criei as packages e fiz import de classes que estão contidas nelas, para importar tudo de um package apenas coloar .* para importar todas as classes pertencentes a um package.
+
 public class TesteDaConta {
 
 	public static void main(String[] args) {
