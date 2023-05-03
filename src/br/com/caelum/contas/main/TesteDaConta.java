@@ -16,11 +16,17 @@ public class TesteDaConta {
 		//26/04/23 - Pacotes criados corretamente
 		
 		Conta ContaDoEduardo = new Conta();
-		Conta ContaDoClaudio = new Conta();
+		Conta ContaDoClaudinho = new Conta();
+		
+		
+		ContaDoClaudinho.setNomeDoTitular("Claudinho");
+		ContaDoEduardo.setNomeDoTitular("Eduardo");
+		
+		ContaDoClaudinho.setAgencia("0000 00000");
+		ContaDoEduardo.setAgencia("0002 88888");
 		
 		ContaDoEduardo.depositar(100);
-		ContaDoClaudio.depositar(300);
-		
+		ContaDoClaudinho.depositar(300);
 		
 		Data data = new Data();
 		
@@ -31,12 +37,12 @@ public class TesteDaConta {
 		List<Conta> listaDeContas = new ArrayList<>();
 		
 		listaDeContas.add(ContaDoEduardo);
-		listaDeContas.add(ContaDoClaudio);
+		listaDeContas.add(ContaDoClaudinho);
 		
-		int maiorSaldo = ContaDoEduardo.compareTo(ContaDoClaudio);
+		int maiorSaldo = ContaDoEduardo.compareTo(ContaDoClaudinho);
 		
 		if(maiorSaldo == -1) {
-			System.out.println("A conta pertencente ao " + ContaDoEduardo.getNomeDoTitular() + " tem o saldo menor que a conta do " + ContaDoClaudio.getNomeDoTitular());
+			System.out.println("A conta pertencente ao " + ContaDoEduardo.getNomeDoTitular() + " tem o saldo menor que a conta do " + ContaDoClaudinho.getNomeDoTitular());
 		}
 		
 		
@@ -55,12 +61,8 @@ public class TesteDaConta {
 		
 		
 		//ContaDoEduardo.dataDeAbertura = data;
-		//ContaDoClaudinho.setNomeDoTitular("Claudio");
-		//ContaDoEduardo.setNomeDoTitular("Eduardo");
 		
 		//Claudio - 19/04/23 - Mudando so o valor do atributo agencia
-		//ContaDoClaudinho.setAgencia("0000 00000");
-		//ContaDoEduardo.setAgencia("0002 88888");
 		
 		//System.out.println("Nome do titular: " + ContaDoClaudinho.getNomeDoTitular());
 		//System.out.println("Nome do titular: " + ContaDoEduardo.getNomeDoTitular());
