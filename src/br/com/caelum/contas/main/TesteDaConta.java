@@ -42,13 +42,14 @@ public class TesteDaConta {
 		int maiorSaldo = ContaDoEduardo.compareTo(ContaDoClaudinho);
 		
 		if(maiorSaldo == -1) {
-			System.out.println("A conta pertencente ao " + ContaDoEduardo.getNomeDoTitular() + " tem o saldo menor que a conta do " + ContaDoClaudinho.getNomeDoTitular());
+			System.out.println("A conta pertencente ao " + ContaDoEduardo.getNomeDoTitular() + " tem o saldo menor que a conta pertencente ao " + ContaDoClaudinho.getNomeDoTitular());
 		}
 		
+		Collections.sort(listaDeContas);
+		
+		System.out.println(listaDeContas);
 		
 		
-		
-		System.out.println("AAAAAAA");
 		
 		
 		
