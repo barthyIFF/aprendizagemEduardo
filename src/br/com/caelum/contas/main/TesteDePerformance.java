@@ -33,6 +33,9 @@ public class TesteDePerformance {
 		long fim = System.currentTimeMillis();
 		long tempo = fim - inicio;
 		System.out.println("Tempo gasto:" + tempo);
+		
+		//teste de comando size, para mostrar o tamanho da minha coleção
+		System.out.println(teste.size());
 	}
 
 }
