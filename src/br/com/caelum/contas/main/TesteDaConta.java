@@ -5,9 +5,9 @@ import br.com.caelum.contas.modelo.Data;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.lang.Comparable;
 
-//Eduardo - 25/04/23 - criei as packages e fiz import de classes que estão contidas nelas, para importar tudo de um package apenas coloar .* para importar todas as classes pertencentes a um package.
+ /*Eduardo - 25/04/23 - criei as packages e fiz import de classes que estão contidas nelas, para importar tudo de um package apenas coloar .* para importar todas as classes pertencentes a um package.
+ */
 
 public class TesteDaConta {
 
@@ -33,9 +33,16 @@ public class TesteDaConta {
 		listaDeContas.add(ContaDoEduardo);
 		listaDeContas.add(ContaDoClaudio);
 		
-		Collections.sort(listaDeContas);
+		int maiorSaldo = ContaDoEduardo.compareTo(ContaDoClaudio);
+		
+		if(maiorSaldo == -1) {
+			System.out.println("A conta pertencente ao " + ContaDoEduardo.getNomeDoTitular() + " tem o saldo menor que a conta do " + ContaDoClaudio.getNomeDoTitular());
+		}
 		
 		
+		
+		
+		System.out.println("AAAAAAA");
 		
 		
 		

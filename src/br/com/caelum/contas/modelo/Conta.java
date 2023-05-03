@@ -5,12 +5,6 @@ import java.lang.Comparable;
 
 public class Conta implements Comparable<Conta>{
 		
-	/*
-	 * Eduardo, veja que o nome do 
-	 */
-	
-	
-	
 	//Veja que conforme conversamos esses são os atributos, ou seja, o que essa classe TEM
 	private String nomeDoTitular;
 	private int numeroDaConta;
@@ -43,12 +37,12 @@ public class Conta implements Comparable<Conta>{
 		saldo += valorQueSeraDepositado;
 	}
 	
-	double calculaRendimento() {
+	public double calculaRendimento() {
 		return saldo * 0.1;
 	}
 	
 	//Veja que conforme conversamos esse é um método, ou seja, o que essa classe FAZ 
-	void mostrarDadosDaConta() {
+	public void mostrarDadosDaConta() {
 		System.out.println("Nome do titular: " + nomeDoTitular);
 		System.out.println("Número da conta: "+ numeroDaConta);
 		System.out.println("Agência: " + agencia);
