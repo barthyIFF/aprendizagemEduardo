@@ -1,6 +1,10 @@
 package br.com.caelum.contas.modelo;
 
-public class Conta {
+import java.lang.Comparable;
+
+
+public class Conta implements Comparable<Conta>{
+		
 	/*
 	 * Eduardo, veja que o nome do 
 	 */
@@ -31,11 +35,11 @@ public class Conta {
 		this.agencia = agencia;
 	}
 	
-	void saca(double valorQueSeraSacado) {
+	public void saca(double valorQueSeraSacado) {
 		saldo += -valorQueSeraSacado;
 	}
 	
-	void depositar(double valorQueSeraDepositado) {
+	public void depositar(double valorQueSeraDepositado) {
 		saldo += valorQueSeraDepositado;
 	}
 	
@@ -50,6 +54,18 @@ public class Conta {
 		System.out.println("Agência: " + agencia);
 		System.out.println("Saldo da conta: " + saldo);
 		//System.out.println("Data de abertura: " + dataDeAbertura.dia + "/" + dataDeAbertura.mes + "/" + dataDeAbertura.ano );
+	}
+
+	public int compareTo(Conta outra) {
+			if (this.saldo < outra.saldo) {
+				return -1;
+			}
+			
+			if (this.saldo > outra.saldo) {
+				return 1;
+			}
+			
+			return 0;
 	}
 
 }
