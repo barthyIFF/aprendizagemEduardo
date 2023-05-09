@@ -34,6 +34,7 @@ public class TesteDaConta {
 		data.mes = 04;
 		data.ano = 2023;
 		
+		//Funções das listas usadas corretamente - Claudio - 05/09/23
 		List<Conta> listaDeContas = new ArrayList<>();
 		
 		listaDeContas.add(ContaDoEduardo);
