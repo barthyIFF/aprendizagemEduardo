@@ -1,12 +1,10 @@
 package br.com.caelum.contas.modelo;
 
-public class Conta {
-	/*
-	 * Eduardo, veja que o nome do 
-	 */
-	
-	
-	
+import java.lang.Comparable;
+
+
+public class Conta implements Comparable<Conta>{
+		
 	//Veja que conforme conversamos esses são os atributos, ou seja, o que essa classe TEM
 	private String nomeDoTitular;
 	private int numeroDaConta;
@@ -31,25 +29,37 @@ public class Conta {
 		this.agencia = agencia;
 	}
 	
-	void saca(double valorQueSeraSacado) {
+	public void saca(double valorQueSeraSacado) {
 		saldo += -valorQueSeraSacado;
 	}
 	
-	void depositar(double valorQueSeraDepositado) {
+	public void depositar(double valorQueSeraDepositado) {
 		saldo += valorQueSeraDepositado;
 	}
 	
-	double calculaRendimento() {
+	public double calculaRendimento() {
 		return saldo * 0.1;
 	}
 	
 	//Veja que conforme conversamos esse é um método, ou seja, o que essa classe FAZ 
-	void mostrarDadosDaConta() {
+	public void mostrarDadosDaConta() {
 		System.out.println("Nome do titular: " + nomeDoTitular);
 		System.out.println("Número da conta: "+ numeroDaConta);
 		System.out.println("Agência: " + agencia);
 		System.out.println("Saldo da conta: " + saldo);
 		//System.out.println("Data de abertura: " + dataDeAbertura.dia + "/" + dataDeAbertura.mes + "/" + dataDeAbertura.ano );
+	}
+
+	public int compareTo(Conta outra) {
+			if (this.saldo < outra.saldo) {
+				return -1;
+			}
+			
+			if (this.saldo > outra.saldo) {
+				return 1;
+			}
+			
+			return 0;
 	}
 
 }
